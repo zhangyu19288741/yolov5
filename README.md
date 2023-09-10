@@ -74,4 +74,4 @@ git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
 
 在eval_command里，用于测试，--weights为训练好的最佳权重，通常在yolov5/runs/train/exp/weights里。best.pt是训练时最佳的权重，last.pt是最后一轮训练后的权重。
 
-修改完后运行main.py
+修改完后运行main.py，要保证运行的python环境安装了pytorch和cuda。
