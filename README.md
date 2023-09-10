@@ -8,7 +8,7 @@
 - 支持**Python/C++**
 
 ## 环境说明
-### Windows10
+### **Windows10**
 - Tensorrt 8.2.5.1
 - Cuda 10.2 Cudnn 8.2.1(**特别注意需安装两个cuda10.2补丁**)
 - Opencv 3.4.6
@@ -16,7 +16,7 @@
 - VS 2017
 - RTX3050
 
-### Linux(Jetson Nano)
+### **Linux(Jetson Nano)**
 - Tensorrt 8.2.1.1
 - Cuda 10.2 Cudnn 8.2.1
 - Opencv 3.4.6
