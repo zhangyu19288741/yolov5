@@ -22,6 +22,7 @@
 - Cuda 10.2 Cudnn 8.2.1
 - Opencv 3.4.6
 - Cmake 3.10.2
+
 **以上是用于搭建TensorRT所需要的环境，使用yolov5训练可以安装最新的pytorch及其对应的CUDA**
 #### 查看自己的版本
 - Cuda      ```nvcc -V```
