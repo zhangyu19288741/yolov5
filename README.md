@@ -38,6 +38,7 @@
 - OpenCV(C++)下载地址 https://opencv.org/releases/
 - pytorch最新版本下载地址 https://pytorch.org/
 - pytorch过去版本下载地址 https://pytorch.org/get-started/previous-versions/
+**安装顺序可以是CUDA，Cudnn，OpenCV，pytorch，TensorRT
 ## 运行案例(Windows)
 创建一个新文件夹yolov5train作为自己的工作环境
 从[yolov5 release v7.0](https://github.com/ultralytics/yolov5/releases/tag/v7.0)的Asset下载.pt模型，这里以yolov5m.pt为例。在yolov5train文件夹里下载yolov5 7.0源代码和本仓库代码
