@@ -66,7 +66,7 @@ git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
 
 对数据集进行划分，这里以4：1划分成训练集(training)和验证集(validation)，当然也可以根据需求添加测试集(test)。可以使用本仓库的move.py文件将数据集划分。需要在yolov5train下新建tra和val文件夹，并在里面新建images和labels文件，之后修改move.py内的路径信息后运行即可。
 
-### 开始训练
+### 训练前的准备
 训练的主程序在main.py里,在训练之前，要修改一些文件和一些准备工作以适用于我们的数据集
 
 - 本仓库的custom.yaml文件，包含了数据集路径和训练物体的名称信息。修改路径和名称
@@ -81,7 +81,7 @@ git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
     '''
     print(a)
   ```
-  
+### 开始训练  
 #### 打开main.py
 
 在train_command里，用于训练，修改--img-size(训练时传入图片大小，与原图像无关),--batch-size(单次传递用以训练的图像个数),--epochs(训练轮数)，--data为custom.yaml,--cfg为my_yolov5m.yaml，--weights为下载好的yolov5m.pt。
