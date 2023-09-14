@@ -1,0 +1,9 @@
+path: E:/yolov5train
+train: tra/images # 包含训练图像路径的txt文件
+val: val/images
+test:  # test images (optional)
+# Classes
+names: 
+  0: CA001
+  1: ZA002
+
