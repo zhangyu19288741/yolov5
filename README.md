@@ -39,9 +39,6 @@ git clone -b v7.0 https://github.com/ultralytics/yolov5.git
 git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
 ```
 也可以到 https://github.com/ultralytics/yolov5/tree/v7.0 下载zip
-<div align="center">
-<img src="assets/1.png" width="800">
-</div>
 
 ### 制作数据集
 创建一个Dataset文件夹，用于存放数据集
@@ -71,7 +68,7 @@ git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
     '''
     dataset: 包含数据集路径的yaml文件
     n: 锚框的数量，一般yolov5n/s/m/l/x是9，yolov5n6/s6/m6/l6/x6是12
-    img_size: image size used for training
+    img_size: 传入图片的大小，和训练时的图片大小一致，和原图像大小无关
     '''
     print(a)
   ```
