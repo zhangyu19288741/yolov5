@@ -13,6 +13,7 @@
 - Cuda 10.2 Cudnn 8.2.1(**特别注意需安装两个cuda10.2补丁**)
 - Opencv 3.4.6
 - Cmake 3.17.1
+- pytorch 1.10.0+cuda102
 - VS 2017
 - RTX3050
 
