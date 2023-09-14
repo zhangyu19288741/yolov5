@@ -31,6 +31,11 @@
 - Cmake     ```cmake --version```
 - OpenCV(Linux C++)    ```pkg-config --modversion opencv```
 
+#### 配置环境
+- CUDA最新版本下载地址 https://developer.nvidia.com/cuda-downloads
+- CUDA过去版本下载地址 https://developer.nvidia.com/cuda-toolkit-archive
+- 
+
 ## 运行案例(Windows)
 创建一个新文件夹yolov5train作为自己的工作环境
 从[yolov5 release v7.0](https://github.com/ultralytics/yolov5/releases/tag/v7.0)的Asset下载.pt模型，这里以yolov5m.pt为例。在yolov5train文件夹里下载yolov5 7.0源代码和本仓库代码
