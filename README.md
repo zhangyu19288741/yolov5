@@ -70,7 +70,7 @@ git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
 训练的主程序在main.py里,在训练之前，要修改一些文件和一些准备工作以适用于我们的数据集
 
 - 本仓库的custom.yaml文件，包含了数据集路径和训练物体的名称信息。修改路径和名称
-- 本仓库的my_yolov5m.yaml文件,是对yolov5/models/yolov5m.yaml的修改，yolov5m.yaml包含了锚框大小和网络信息，我们需要修改里面的nc(物品种类数量)，anchor(锚框大小)。可以在yolov5/utils/autoanchor.py的最后添加如下代码，img_size是对应main.py里train_command中--img-size，是训练时传入图片大小，与原图像无关。
+- 本仓库的my_yolov5m.yaml文件,是对yolov5/models/yolov5m.yaml的修改，yolov5m.yaml包含了锚框大小和网络信息，我们需要修改里面的nc(物品种类数量)，anchor(锚框大小)。anchor的获取可以在yolov5/utils/autoanchor.py的最后添加如下代码之后运行来获得最适合数据集的锚框大小，并在my_yolov5m.yaml里进行修改.**注意：这里获得的锚框的数据是小数，在custom.yaml里将anchor改成整数。**。
   ```
   if __name__ =='__main__':
     a=kmean_anchors(dataset='E:/yolov5train/custom.yaml',n=9,img_size=640)
@@ -81,7 +81,7 @@ git clone https://github.com/Monday-Leo/Yolov5_Tensorrt_Win10
     '''
     print(a)
   ```
-  之后运行来获得最适合数据集的锚框大小，并在my_yolov5m.yaml里进行修改.**注意：这里获得的锚框的数据是小数，在custom.yaml里将anchor改成整数。**
+  
 #### 打开main.py
 
 在train_command里，用于训练，修改--img-size(训练时传入图片大小，与原图像无关),--batch-size(单次传递用以训练的图像个数),--epochs(训练轮数)，--data为custom.yaml,--cfg为my_yolov5m.yaml，--weights为下载好的yolov5m.pt。
